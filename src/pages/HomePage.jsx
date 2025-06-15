@@ -31,7 +31,7 @@ const HomePage = () => {
             <p>Ready to explore our courses?</p>
             <a href="https://vck-ojt.vercel.app/courses"><button>Explore Cources</button></a>
         </div>
-    )
+    ) 
 }
 
 export default HomePage;
