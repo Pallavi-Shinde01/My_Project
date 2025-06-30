@@ -60,7 +60,8 @@ const AdmissionPage = () => {
             </ol>
 
             <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee
-             structures, please visit our<a className="add" href="/cources">Courses page</a> or <a className="add" href="/contact">Contact us page</a>.</p>
+             structures, please visit our
+             <a className="add" href="/cources">Courses page</a> or <a className="add" href="/contact">Contact us page</a>.</p>
             </div>
             </div>
             </div>
