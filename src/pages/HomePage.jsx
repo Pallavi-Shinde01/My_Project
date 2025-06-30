@@ -1,16 +1,32 @@
+
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const HomePage = () => {
+   
     return(
-        <div>
-            <Header/>
+            <div id="root">
+            <div></div>
+            <div className="main-layout">
+             <Header/>
+             
+            <div className="content">
+            
+            <div className="page-container" style={{overflow:"auto"}}>
+            <div className="main-content-scrollable">
+            <div className="hero-section">
+            
+             <img  className="hero-banner-image" src="/Images/college-banner-Cz0xylpt.png" alt="Image" width="1262px"/>
+            <div className="hero-overlay-text">
             <h1>Welcome to Vivekanand College!</h1>
             <p>Your journey to excellence starts here.</p>
-
-             <a href="https://vck-ojt.vercel.app/admissions"><button>Apply Now!</button></a>
+            <a className="btn hero-btn" href="/admission"><button>Apply Now!</button></a>
+            </div>
+            </div>
+         
             <p><b>Vivekanand College</b>is a premier educational institution dedicated to fostering academic excelence, unnovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.
             <br/><br/>At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem where curiosity thrives and future leaders are shaped.</p>
-            <h1>Why Choose Vivekanand College?</h1>
+            <h2>Why Choose Vivekanand College?</h2>
             <hr/>
 
             <ul>
@@ -22,16 +38,35 @@ const HomePage = () => {
             </ul>
             <br/>
 
-            <h1>Campus Life & Facilities</h1>
-            <hr/>
-            <img src="https://vck-ojt.vercel.app/assets/students-studying-DbLGuwF_.jpeg" width="600px"/>
-            <img src="https://vck-ojt.vercel.app/assets/campus-life-Crkero7B.jpg" width="600px" height="300px"/>
-            <br/>
+            <h2>Campus Life & Facilities</h2>
+            
+            <div className="image-gallery">
+            <img src="/Images/students-studying-DbLGuwF_.jpeg" width="600px" height="300px"/>
+            <img src="/Images/campus-life-Crkero7B.jpg" width="650px" height="300px"/>
+            </div>
             <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
+            <div className="text">
             <p>Ready to explore our courses?</p>
-            <a href="https://vck-ojt.vercel.app/courses"><button>Explore Cources</button></a>
-        </div>
-    ) 
+            <div className="buttons">
+            <a href="/cources"><button>Explore Cources</button></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+            <Footer/>
+            </div>
+            
+            
+        
+    )
+            
+            
+            
+    
 }
 
 export default HomePage;
+
