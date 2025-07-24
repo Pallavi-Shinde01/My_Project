@@ -18,36 +18,69 @@ const Header = () => {
 
     return (
         <>
-            <header className='Header1'>
+            {/* <header className='Header1'>
                 <div className='college-name'>Vivekanand College</div>
                 <nav className="navbar desktop-nav">
                     <Link to="/home" className='nav-item'>Home</Link>
                     <Link to="/about" className='nav-item'>About</Link>
                     <Link to="/cources" className='nav-item'>Courses</Link>
                     <Link to="/contact" className='nav-item'>Contact</Link>
-                    <a className='nav-item btn1' href="/admission">Apply Now!</a>
+                    <a className='nav-item btn1' href="/admission">Apply Now!</a> */}
 
                     {/* Hamburger Button */}
-                    <button className='Hidebtn-menu' onClick={toggleDrawer}>
+                    {/* <button className='Hidebtn-menu' onClick={toggleDrawer}>
                         <span className='Hidebtn-icon'></span>
                         <span className='Hidebtn-icon'></span>
                         <span className='Hidebtn-icon'></span>
                     </button>
-                </nav>
+                </nav> */}
 
                 {/* Drawer Navigation */}
-                <nav className={`drawer-nav ${isDrawerOpen ? 'drawer-nav-open' : ''}`}>
+                {/* <nav className={`drawer-nav ${isDrawerOpen ? 'drawer-nav-open' : ''}`}>
                     <button className='close-drawer-btn' onClick={closeDrawer}>X</button>
                     <Link className='nav-item' to='/home'>Home</Link>
                     <Link className='nav-item' to='/about'>About</Link>
                     <Link className='nav-item' to='/cources'>Cources</Link>
                     <Link className='nav-item' to='/contact'>Contact</Link>
                     <Link className='nav-item-btn1' to='/admission'>Apply Now!</Link>
-                </nav>
+                </nav> */}
 
                 {/* Overlay to close the drawer when clicked outside */}
-                {isDrawerOpen && <div className="drawer-overlay" onClick={closeDrawer}></div>}
-            </header>
+                {/* {isDrawerOpen && <div className="drawer-overlay" onClick={closeDrawer}></div>}
+            </header> */}
+
+<header className='Header1'>
+  <div className='college-name'>Vivekanand College</div>
+
+  {/* Hamburger Button - visible on mobile */}
+  <button className='Hidebtn-menu' onClick={toggleDrawer}>
+    <span className='Hidebtn-icon'></span>
+    <span className='Hidebtn-icon'></span>
+    <span className='Hidebtn-icon'></span>
+  </button>
+
+  {/* Desktop navigation - hidden on mobile */}
+  <nav className="navbar desktop-nav">
+    <Link to="/home" className='nav-item'>Home</Link>
+    <Link to="/about" className='nav-item'>About</Link>
+    <Link to="/cources" className='nav-item'>Courses</Link>
+    <Link to="/contact" className='nav-item'>Contact</Link>
+    <a className='nav-item btn1' href="/admission">Apply Now!</a>
+  </nav>
+
+  {/* Drawer Navigation */}
+  <nav className={`drawer-nav ${isDrawerOpen ? 'drawer-nav-open' : ''}`}>
+    <button className='close-drawer-btn' onClick={closeDrawer}>X</button>
+    <Link className='nav-item' to='/home'>Home</Link>
+    <Link className='nav-item' to='/about'>About</Link>
+    <Link className='nav-item' to='/cources'>Courses</Link>
+    <Link className='nav-item' to='/contact'>Contact</Link>
+    <Link className='nav-item-btn1' to='/admission'>Apply Now!</Link>
+  </nav>
+
+  {isDrawerOpen && <div className="drawer-overlay" onClick={closeDrawer}></div>}
+</header>
+
         </>
     );
 }

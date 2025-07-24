@@ -66,13 +66,31 @@
 .btn1:hover{
     background-color: #218838;
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 .Hidebtn-menu {
     display: block;
 }
-}
+} */
+@media (max-width: 768px) {
+    .Hidebtn-menu {
+      display: block;
+    }
+  
+    .desktop-nav {
+      display: none; /* Hide desktop nav on mobile */
+    }
+  }
+  @media (max-width: 768px) {
+    .Hidebtn-icon {
+      display: block;
+    }
+  
+    .desktop-nav {
+      display: none; /* Hide desktop nav on mobile */
+    }
+  }
 .Hidebtn-menu{
-    /* display: none;  */
+    display: none; 
     background: none;
     border: none; 
     cursor: pointer;
