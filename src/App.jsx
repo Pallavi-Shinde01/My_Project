@@ -8,6 +8,7 @@ import './styles/Pages.css'
 import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
 import { useState } from "react";
 import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(true);
@@ -29,6 +30,7 @@ const App = () => {
       </div>
       <Router>
         <Routes>
+         
           <Route path="/" element={<HomePage/>}/>
           <Route path="/home" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
